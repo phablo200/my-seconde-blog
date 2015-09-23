@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home.html</title>
+<meta charset="utf-8" />
+</head>
+
+<body>
+<fieldset>
+<h1>Aprendendo</h1>
+
+{%  if  Lista  %} 
+    <ul> 
+    {%  for  question  in  Lista  %} 
+        <li><a href="{% url 'detail' question.id %}"> {{  question.pergunta_texto  }} </a></li> 
+    {%  endfor  %} 
+    </ul> 
+{%  else  %} 
+    <p> Não ha nada na lista. </ p> 
+{%   endif%}
+
+</fieldset>
+</body>
+
+
+
+</html>

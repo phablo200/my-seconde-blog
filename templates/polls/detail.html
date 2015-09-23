@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<meta charset="utf-8"/>
+<link href="{%static 'Css/style.css' %}" rel="stylesheet" />
+</head>
+<body>
+<fieldset>	
+	{{ pergunta }}
+	<h1>{{ pergunta.pergunta_texto }}</h1>
+<ul>
+{% for choice in pergunta.reposta_set.all %}
+    <li>{{ choice.resposta_texto }}</li>
+{% endfor %}
+</fieldset>
+</ul>
+
+</body>
+</html>

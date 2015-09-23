@@ -1,3 +1,84 @@
-body{
-	background: black;
-}
+
+	body{
+		width:800px;
+	}
+	
+	nav#menu{
+		margin-top:-20px;
+		display: block;
+		position: absolute;
+		top:0px;
+		left: 600px;
+
+
+	}
+
+	nav#menu ul{
+		list-style: none;
+	}
+	nav#menu li{
+		display: inline-block;
+		font-family: arial;
+		font-weight: 300;
+		text-decoration: none;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		padding: 10px;
+	}
+
+	
+
+	nav#menu a#Inicio{
+		background-color: #337ab7;
+		color: white;
+		padding: 10px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-family: arial;
+		font-size: 14px;
+		text-decoration: none;
+	}
+
+	nav#menu a{
+		background-color: white;
+		color: #337ab7;
+		padding: 10px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-family: arial;
+		font-size: 14px;
+		text-decoration: none;
+	}
+
+	nav#menu a:hover{
+		background-color: #dddddd;
+
+	}
+
+	div#Interface{
+		width:800px;
+		background-color:#dddddd;
+		border-radius: 6px;
+		margin: 40px auto 0px auto;
+		padding: 10px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	}
+
+	header#block{
+		border-bottom: 1px black solid;
+	}
+
+	header#block h1{
+		font-family: arial;
+		font-size: 24px;
+		font-weight: 300;
+		color: rgba(0,0,0,.7);
+	}
+
+	header#block h2{
+		font-family: arial;
+		font-size: 20px;
+		font-weight: 300;
+		color: rgba(0,0,0,.7);
+
+	}
+
