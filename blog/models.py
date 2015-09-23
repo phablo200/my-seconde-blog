@@ -1,18 +1,26 @@
 from django.db import models
 from django.utils import timezone
 
-class Post(models.Model):
-    author = models.ForeignKey('auth.User')
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
+from django.db import models
+from django.utils import timezone
+import datetime
 
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
+
+
+class Pergunta(models.Model):
+    pergunta_texto=models.CharField(max_length=200)
+    data=models.DateTimeField('date_published')
 
     def __str__(self):
-        return self.title
+        string= (str(self.pergunta_texto) + " Data: " + str(self.data))
+        return string
+    def Data(self):
+        return self.data >= timezone.now() - datetime.timedelta(days=1)
+class Reposta(models.Model):
+
+    pergunta=models.ForeignKey(Pergunta)
+    resposta_texto=models.CharField(max_length=200)
+    votos=models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.resposta_texto
