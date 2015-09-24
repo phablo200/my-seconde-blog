@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<title></title>
+</head>
+
+<body>
+
+{{pergunta}}
+<h1>{{ pergunta.pergunta_texto }}</h1>
+
+<ul>
+{% for choice in pergunta.reposta_set.all %}
+    <li>{{ choice.resposta_texto }} -- {{ choice.votos }} vote{{ choice.votos|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'blog:detail' pergunta.id %}">Vote novamente?</a>
+
+</body>
+
+</html>

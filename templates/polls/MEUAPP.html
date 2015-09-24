@@ -5,7 +5,19 @@
 <head>
 <meta charset="utf-8" />
 <title></title>
+<style type="text/css">
+section#sec a#botao{
 
+	background-color: #337ab7;
+		color: white;
+		padding: 10px;
+		border-radius: 4px;
+		cursor: pointer;
+		font-family: arial;
+		font-size: 14px;
+		text-decoration: none;
+}
+</style>
 <link href=" {% static 'Css/style.css'%}" rel="stylesheet" />
 <script type="text/javascript" src="{% static 'script/baladinha.js '%}"></script>
 </head>
@@ -26,7 +38,7 @@
 
 </header>
 
-<section>
+<section id ="sec">
 
 
 <img src="" />
@@ -39,13 +51,16 @@
 <img src="" />
 <img src="" />
 <img src="" />
+<br/>
+<br/>
 
-<button type="button" onclick="clique();" id="botao">clique</button> 
+
+<a href="#" onclick="clique();" id="botao">clique</button> 
 
 </section>
 
 
-<footer>
+<footer id="fot">
 
 </footer>
 

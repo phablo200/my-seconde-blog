@@ -9,12 +9,21 @@
 </head>
 <body>
 <fieldset>	
-	{{ pergunta }}
-	<h1>{{ pergunta.pergunta_texto }}</h1>
-<ul>
+<h1>{{pergunta.pergunta_texto}}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p> {% endif %}
+<form action="{% url 'blog:vote' pergunta.id %}" method="post">
+{% csrf_token %}
+
 {% for choice in pergunta.reposta_set.all %}
-    <li>{{ choice.resposta_texto }}</li>
+<input type="radio" name="choice" id="choice{{fooloop.counter }}" value="{{choice.id}}"/>
+
+<label for="choice{{forloop.counter}}">{{choice.resposta_texto}}</label><br/>
 {% endfor %}
+
+<input type="submit" value="Vote" />
+</form>
+
 </fieldset>
 </ul>
 

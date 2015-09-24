@@ -12,7 +12,7 @@
 {%  if  Lista  %} 
     <ul> 
     {%  for  question  in  Lista  %} 
-        <li><a href="{% url 'detail' question.id %}"> {{  question.pergunta_texto  }} </a></li> 
+        <li><a href="{% url 'blog:detail' question.id %}"> {{  question.pergunta_texto  }} </a></li> 
     {%  endfor  %} 
     </ul> 
 {%  else  %} 

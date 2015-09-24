@@ -83,13 +83,14 @@
 	}
 
 	section#sec{
-		
-		margin-top: 50px;
+		margin-top: 40px;
+		border-bottom: 1px black solid;
 	}
 
 	figure.edit{
 		border:8px solid #f1f1f1;
 		box-shadow: 1px 1px 4px black;
+		width:300px;
 	}
 
 	figure.edit img{
@@ -97,4 +98,10 @@
 		height:100%;
 
 	}
+
+	footer#fot{
+		margin-top: 50px;
+	}
+
+
 
