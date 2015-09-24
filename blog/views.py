@@ -23,4 +23,5 @@ def home(request):
 	return render(request, "polls/home.html", context)
 def desenvolvedor(request):
     return render(request, "polls/desenvolvedor.html", {})
-	
+def MEUAPP(request):
+    return render(request, "polls/MEUAPP.html", {})	
