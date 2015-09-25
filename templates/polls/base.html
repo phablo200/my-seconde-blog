@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title></title>
+<meta charset="UTF-8">
+<link href="{% static 'Css/estilo.css' %}" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="inter">
+<header id="cabeca">
+<nav id="menu">
+<ul>
+	<li><a href="">Inicio</a></li>
+	<li><a href="#">Cadastre-se</a></li>
+	<li><a href="MEUAPP/">MEUAPP</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="secao1">
+<h1 id="fabrica">Fabrica de programadores</h1>
+</section>
+
+<section id="secao">
+{% block content %}
+{% endblock %}
+
+</section>
+<section id="divisor" >
+<h1></h1>
+</section>
+
+<footer id="rodape">
+<ul>
+<li><p>Por Phablo Vilas Boas</p></li>
+<li><a href="https://www.facebook.com"> Facebook </a></li>
+<li><a href="https://www.twiter.com"> twiter </li>
+<li><a href="#"> Fale Conosco </a> </li>
+<ul>
+</footer>
+
+
+</div>
+
+
+
+
+
+</body></html>

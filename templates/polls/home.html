@@ -1,13 +1,17 @@
+
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
 <title>Home.html</title>
 <meta charset="utf-8" />
+<link href=" {% static 'Css/style.css'%}" rel="stylesheet" />
+
 </head>
 
 <body>
-<fieldset>
-<h1>Aprendendo</h1>
+
+{% include 'polls/interface.html' %}
 
 {%  if  Lista  %} 
     <ul> 
@@ -19,7 +23,6 @@
     <p> Não ha nada na lista. </ p> 
 {%   endif%}
 
-</fieldset>
 </body>
 
 
