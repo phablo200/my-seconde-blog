@@ -1,105 +1,179 @@
-
-	body{
-		width:800px;
-	}
+body{
 	
-	nav#menu{
-		margin-top:-10px;
-		display: block;
-		position: absolute;
-		top:0px;
-		left: 600px;
-	}
+	background:url("fundo.jpg");
+}
 
-	nav#menu ul{
-		list-style: none;
-	}
-	nav#menu li{
-		display: inline;
-		font-family: arial;
-		font-weight: 300;
-		text-decoration: none;
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		padding: 0px;
-	}
-
+div#inter{
+	width:900px;
+	background:white;
+	margin-top:40px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10px;
+	border-radius:4px;
 	
-
-	nav#menu a#Inicio{
-		background-color: #337ab7;
-		color: white;
-		padding: 10px;
-		border-radius: 4px;
-		cursor: pointer;
-		font-family: arial;
-		font-size: 14px;
-		text-decoration: none;
-	}
-
-	nav#menu a{
-		background-color: white;
-		color: #337ab7;
-		padding: 10px;
-		border-radius: 4px;
-		cursor: pointer;
-		font-family: arial;
-		font-size: 14px;
-		text-decoration: none;
-	}
-
-	nav#menu a:hover{
-		background-color: #dddddd;
-
-	}
-
-	div#Interface{
-		width:800px;
-		background-color:#dddddd;
-		border-radius: 6px;
-		margin: 500px;
-		padding: 10px;
-		box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-	}
-
-	header#block{
-		border-bottom: 1px black solid;
-	}
-
-	header#block h1{
-		font-family: arial;
-		font-size: 24px;
-		font-weight: 300;
-		color: rgba(0,0,0,.7);
-	}
-
-	header#block h2{
-		font-family: arial;
-		font-size: 20px;
-		font-weight: 300;
-		color: rgba(0,0,0,.7);
-
-	}
-
-	section#sec{
-		margin-top: 40px;
-		border-bottom: 1px black solid;
-	}
-
-	figure.edit{
-		border:8px solid #f1f1f1;
-		box-shadow: 1px 1px 4px black;
-		width:300px;
-	}
-
-	figure.edit img{
-		width:100%;
-		height:100%;
-
-	}
-
-	footer#fot{
-		margin-top: 50px;
-	}
+} 
+header#cabeca{
+	margin-top:-40px;
+	height:50px;
+	border-radius: 6px;
+	box-shadow:1px 1px 10px rgba(0,0,0, .8);
+}
 
 
+nav#menu{
+	display: block;
+	position: absolute;
+	margin-left: 550px;
+	margin-top: 0px;
+	padding: 4px;
 
+}
+
+nav#menu ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav#menu ul li{
+	position: relative;
+	display: inline-block;	
+}
+
+nav#menu li#h ul{
+	position: absolute;
+	display: none;
+}
+nav#menu li#h:hover ul{
+	background: white;
+	width: 110px;
+	padding: 10px;
+	display: block; 
+	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+nav#menu li#h a{
+	background: white;
+	display: block;
+	border-radius: 0px;
+
+}
+
+nav#menu a:hover{
+	background: #ddd;
+}
+
+nav#menu a{
+	display: block;
+	background: white;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+	font-style: inherit;
+	font-size: 12pt;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #337ab7;
+}
+section#secao{
+	border-radius:6px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.8);
+	margin-top:-19px;
+	padding:50px;
+	height:800px;
+}
+
+section#secao h1{
+	font-family: Arial, sans-serif;
+	font-weight: 200;
+	margin-left: 310px;
+	font-size: 20pt;
+	color: #606060;
+}
+
+section#secao p{
+	font-size: Arial, sans-serif;
+	font-weight: 200;
+	font-size: 14pt;
+	color: #606060;
+	width:430px;
+	margin-left: 150px;
+	text-align: center;
+	text-align: justify;
+}
+
+
+section#secao a{
+	color:#ddd;
+	border:1px #606060 solid;
+	padding: 10px;
+	text-decoration: none;
+	background-color:#337ab7;
+	border-radius: 5px;
+	margin-top: 100px;
+	margin-left:300px;
+
+}
+
+section#secao iframe{
+	margin-left: 150px;
+	margin-top: 100px;
+	border:10px #ddd solid;
+}
+
+section#secao1{
+	background:url("fundo.jpg");
+	margin-top:-7px;
+}
+
+h1#fabrica{
+	font-family:Arial, sans-serif;
+	font-weight:300;
+	padding:15px;
+	margin-top:5px;
+	margin-left:300px;
+	text-shadow:1px 1px 1px rgba(0,0,0,.2);
+}
+
+section#divisor{
+	background:url("fundo.jpg");
+	height:50px;
+	margin-top:-20px;
+}
+
+footer#rodape{
+	height:50px;
+	border-radius:5px;
+	box-shadow:1px 1px 10px rgba(0,0,0,.8);	
+	padding:10px;
+}
+
+footer#rodape ul{
+	list-style:none;
+}
+
+footer#rodape li{
+	display:inline-block;
+	float:right;
+	margin-right:30px;
+}
+
+footer#rodape a{
+	text-decoration:none;
+	color:#337ab7;
+}
+
+footer#rodape p{
+	font-family:Arial, sans-serif;
+	position:absolute;
+	margin-left:-850px;
+	margin-top:0px;
+	
+	
+}
+
+form#formulario label{
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	font-style: inherit;
+
+}

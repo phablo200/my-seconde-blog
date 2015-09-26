@@ -41,5 +41,5 @@ def desenvolvedor(request):
     return render(request, "polls/desenvolvedor.html", {})
 def MEUAPP(request):
     return render(request, "polls/MEUAPP.html", {})	
-def inde(request):
-    return render(request, "polls/index.html" , {})
+def Cadastro(request):
+    return render(request, "polls/Cadastro.html" , {})

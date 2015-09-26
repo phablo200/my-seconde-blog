@@ -1,0 +1,44 @@
+{% extends "polls/base.html" %}
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+<head>
+
+<title></title>
+</head>
+
+
+{% block content %}
+
+<form id="formulario" action"#" method ="POST" >
+
+<fieldset id="cadastro">
+<legend>Cadastre Sua Noticia</legend>
+<p>Nome *
+<input type="text" name="nome" id="nome" maxlength="30" size="20" placeholder="Inserir Nome"/></p>
+<p>Email * 
+<input type="email" name="email" id="email" maxlength="30" size="20" placeholder="Inserir Email"/></p>
+<p> Senha * 
+<input type="password" name="pass" id="pass" maxlength="30" size="20" placeholder="Inserir senha"/></p>
+</fieldset>
+
+<fieldset ="nascimento">
+<legend>Sexo</legend>
+
+Masculino<input type="radio" name="sexo" id="M"/>
+
+Feminino<input type="radio" name="sexo" id="F" />
+</fieldset>
+
+</form>	
+
+
+{% endblock %}
+
+
+
+</html>

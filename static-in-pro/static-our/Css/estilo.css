@@ -20,40 +20,7 @@ header#cabeca{
 	box-shadow:1px 1px 10px rgba(0,0,0, .8);
 }
 
-nav#menu {
-	display:block;
-	position:absolute;
-	margin-top:0px;
-	margin-left:500px;
-}
 
-nav#menu ul{
-	list-style:none;
-}
-
-nav#menu li{
-	display:inline-block;
-	font-family:Arial, sans-serif;
-	font-weight:100;
-	
-}
-
-nav#menu a{
-	color:#337ab7;
-	background:white;
-	padding:10px;
-	border-radius:4px;
-	cursor:pointer;
-	font-family:Arial, sans-serif;
-	text-decoration:none;
-	font-size:15pt;	
-	font-weight:100;
-}
-
-nav#menu a:hover{
-	background:#ddd;
-	
-}
 
 section#secao{
 	border-radius:6px;
@@ -150,5 +117,17 @@ footer#rodape p{
 	margin-top:0px;
 	
 	
+}
+
+form#formulario label{
+	font-family: Arial, sans-serif;
+	font-size: 15pt;
+	font-style: inherit;
+
+}
+
+form input{
+
+
 }
 
