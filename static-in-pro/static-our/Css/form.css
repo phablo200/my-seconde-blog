@@ -1,3 +1,31 @@
-form#formulario label{
+form#F label{
+	font-family: Arial, sans-serif;
+	font-style: inherit;
+	font-size: 12pt;
+	color: #606060;
+}
+
+form#F legend{
+	font-family: Arial, sans-serif;
+	font-style: inherit;
 	font-size: 20pt;
+	padding: 8px;
+	color: #606060;
+
+}
+
+form#F input#nome{
+	margin-left: 10px;
+}
+
+form#F input#email{
+	margin-left: 14px;
+}
+
+form#F input#pass{
+	margin-left: 8px;
+}
+
+form#F input#F{
+	margin-left: 11	px;
 }

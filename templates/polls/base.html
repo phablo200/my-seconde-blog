@@ -6,6 +6,7 @@
 <title></title>
 <meta charset="UTF-8">
 <link href="{% static 'Css/style.css' %}" rel="stylesheet">
+<link href="{% static 'Css/form.css' %}" rel="stylesheet">
 </head>
 <body>
 
@@ -14,11 +15,15 @@
 <header id="cabeca">
 <nav id="menu">
 <ul>
-	<li><a href="#"> Cadastre-se</a> </li>
-	<li><a href="#"> Desenvolvedor</a> </li>
+	<li><a href="/blog/">Inicio</a> </li>
+	{% if request.user.is_authenticated %}
+	<li><a href="">logout</a> </li>
+	{% else %}
+	<li><a href="/blog/Cadastro"> Cadastre-se</a></li>
+	{% endif %}
 	<li id="h"><a href="#"> Meus Apps</a>
 		<ul>
-			<li><a href="#">Cine</a></li>
+			<li><a href="/blog/MEUAPP/">Cine</a></li>
 			<li><a href="#">Votacao</a></li>
 			<li><a href="#">etc</a></li>
 		</ul>
@@ -45,7 +50,7 @@
 <li><p>Por Phablo Vilas Boas</p></li>
 <li><a href="https://www.facebook.com"> Facebook </a></li>
 <li><a href="https://www.twiter.com"> twiter </li>
-<li><a href="#"> Fale Conosco </a> </li>
+<li><a href="/blog/desenvolvedor/"> Fale Conosco </a> </li>
 <ul>
 </footer>
 

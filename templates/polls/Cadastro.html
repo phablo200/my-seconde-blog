@@ -8,30 +8,33 @@
 <html lang="pt-br">
 <head>
 
+
+
 <title></title>
+
 </head>
 
 
 {% block content %}
 
-<form id="formulario" action"#" method ="POST" >
+<form id="F" action"#" method ="POST" >
 
 <fieldset id="cadastro">
-<legend>Cadastre Sua Noticia</legend>
-<p>Nome *
-<input type="text" name="nome" id="nome" maxlength="30" size="20" placeholder="Inserir Nome"/></p>
-<p>Email * 
-<input type="email" name="email" id="email" maxlength="30" size="20" placeholder="Inserir Email"/></p>
-<p> Senha * 
-<input type="password" name="pass" id="pass" maxlength="30" size="20" placeholder="Inserir senha"/></p>
+<legend>Cadastre-se Aqui</legend>
+<label for="nome"> Nome * </label>
+<input type="text" name="nome" id="nome" maxlength="20" size="20" placeholder="Inserir Nome"/><br /><br />
+<label for="email">Email * </label>
+<input type="email" name="email" id="email" maxlength="20" size="20" placeholder="Inserir Email"/><br/><br/>
+<label for="pass"> Senha *</label>
+<input type="password" name="pass" id="pass" maxlength="20" size="20" placeholder="Inserir senha"/>
 </fieldset>
 
 <fieldset ="nascimento">
 <legend>Sexo</legend>
 
-Masculino<input type="radio" name="sexo" id="M"/>
+<label for="M">Masculino</label><input type="radio" name="sexo" id="M"/><br/><br/>
 
-Feminino<input type="radio" name="sexo" id="F" />
+<label for="F">Feminino</label><input type="radio" name="sexo" id="F" />
 </fieldset>
 
 </form>	

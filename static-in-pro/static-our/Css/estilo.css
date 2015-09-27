@@ -120,14 +120,9 @@ footer#rodape p{
 }
 
 form#formulario label{
-	font-family: Arial, sans-serif;
-	font-size: 15pt;
-	font-style: inherit;
-
+	background: black;
 }
 
-form input{
 
 
-}
 
