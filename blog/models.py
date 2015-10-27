@@ -24,3 +24,11 @@ class Reposta(models.Model):
 
     def __str__(self):
         return self.resposta_texto
+class SignUp(models.Model):
+    email=models.EmailField()
+    full_name=models.CharField(max_length=40)
+    timestamp=models.DateTimeField(auto_now_add=True, auto_now=False)
+    update=models.DateTimeField(auto_now_add=True, auto_now=False)
+
+    def __str__(self):
+        return self.email         

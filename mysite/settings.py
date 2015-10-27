@@ -36,8 +36,11 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'blog',
+    'registration',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -113,3 +116,11 @@ STATICFILES_DIRS = (
 MEDIA_URL='/media/'
 
 MEDIA_ROOT=os.path.join(os.path.dirname(BASE_DIR), "static-in-env", "media-root")
+
+
+CRISPY_TEMPLATE_PACK='bootstrap3'
+
+ACCOUNT_ACTIVATION_DAYS=7
+REGISTRATION_AUTO_LOGIN=True
+SITE_ID=1
+LOGIN_REDIRECT_URL='/blog/'

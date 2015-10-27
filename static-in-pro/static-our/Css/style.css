@@ -1,6 +1,6 @@
 body{
 	
-	background:url("fundo.jpg");
+	background:url("fundo2.jpg");
 }
 
 div#inter{
@@ -121,7 +121,7 @@ section#secao iframe{
 }
 
 section#secao1{
-	background:url("fundo.jpg");
+	background:url("fundo2.jpg");
 	margin-top:-7px;
 }
 
@@ -135,7 +135,7 @@ h1#fabrica{
 }
 
 section#divisor{
-	background:url("fundo.jpg");
+	background:url("fundo2.jpg");
 	height:50px;
 	margin-top:-20px;
 }

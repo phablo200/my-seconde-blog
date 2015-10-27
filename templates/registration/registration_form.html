@@ -1,0 +1,30 @@
+{% extends "polls/base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+
+<div class='row'>
+<div class='col-sm-6 col-sm-offset-3'>
+<h1>Cadastre-se aqui!</h1>
+<form method="post" action=".">
+  {% csrf_token %}
+
+  {{ form|crispy }}
+
+  <input type="submit" value="{% trans 'Cadastrar' %}" />
+</form>
+</div>
+</div>
+
+<hr/>
+<div class='row'>
+<div class='col-sm-6 col-sm-offset-3 text-align-center'>
+	
+<p>Need to <a href="{% url 'auth_login' %}">Login</a>?</p>
+</div>
+</div>
+
+
+{% endblock %}

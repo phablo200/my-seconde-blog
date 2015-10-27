@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from .models import *
+from .forms import SignUpForm
 
 class ChoiceInline(admin.TabularInline):
     model = Reposta
@@ -15,3 +16,8 @@ class QuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(Pergunta, QuestionAdmin)
 
+class SignUpAdmin(admin.ModelAdmin):
+	list_display=['__str__', 'timestamp', 'update']
+	form=SignUpForm
+
+admin.site.register(SignUp, SignUpAdmin)

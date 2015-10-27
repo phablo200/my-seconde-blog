@@ -3,7 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext, loader
 from .models import Pergunta
 from django.core.urlresolvers import reverse
-
+from .forms import SignUpForm
+from django.contrib.auth.hashers import make_password
 def index(request):
     return render(request, "index.html", {});
 
@@ -42,4 +43,22 @@ def desenvolvedor(request):
 def MEUAPP(request):
     return render(request, "polls/MEUAPP.html", {})	
 def Cadastro(request):
-    return render(request, "polls/Cadastro.html" , {})
+    title='Bem vindo Faca O Seu Cadastro'
+    form=SignUpForm(request.POST or None)
+
+    context={"MyTitle" : title,
+            "form": form,
+    }
+
+    if(form.is_valid()):
+        instance=form.save(commit=False)
+       
+
+
+       
+        instance.save()
+
+        context={"MyTitle": "Obrigado %s" %(instance.full_name),
+        }
+
+    return render(request, "polls/Cadastro.html" , context)

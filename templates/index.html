@@ -14,14 +14,14 @@
 
      
         <h1>Bem Vindo (:</h1>
-        <p class="lead">Olá Internautas, esse site foi criado com fins estudantis,tendo intuito de apresentar uma série de aplicativos criado por mim, Phablo Jose Vilas Boas do Curso de Sistemas de Informação.</p>
+        <p class="lead">Olá Internautas, esse site foi criado com fins estudantis,tendo intuito de Praticar conceitos de programação web.</p>
        	{% if request.user.is_authenticated %}
        	<h1>Voce está logado (:</h1>
        	{% else %}
         <a href="Cadastro/" role="button">Cadastre-se aqui</a>
         {% endif %}
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/PmefpISZ7Ew" frameborder="0" allowfullscreen></iframe>
-
+        <img src = "{% static 'Imagens/PrimeiroGif.gif' %}" />
+        <h2>Trabalho Professor Fabricio! Relizando um gif</h2>
       
     {% endblock %}
 

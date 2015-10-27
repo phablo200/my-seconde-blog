@@ -17,24 +17,15 @@
 
 {% block content %}
 
-<form id="F" action"#" method ="POST" >
+<form id="F" action"/blog/Cadastro/" method ="POST" >
+{% csrf_token %}
+
 
 <fieldset id="cadastro">
 <legend>Cadastre-se Aqui</legend>
-<label for="nome"> Nome * </label>
-<input type="text" name="nome" id="nome" maxlength="20" size="20" placeholder="Inserir Nome"/><br /><br />
-<label for="email">Email * </label>
-<input type="email" name="email" id="email" maxlength="20" size="20" placeholder="Inserir Email"/><br/><br/>
-<label for="pass"> Senha *</label>
-<input type="password" name="pass" id="pass" maxlength="20" size="20" placeholder="Inserir senha"/>
-</fieldset>
+{{ form.as_p }}
+<input type="submit" value="Salvar" id="salvar" />
 
-<fieldset ="nascimento">
-<legend>Sexo</legend>
-
-<label for="M">Masculino</label><input type="radio" name="sexo" id="M"/><br/><br/>
-
-<label for="F">Feminino</label><input type="radio" name="sexo" id="F" />
 </fieldset>
 
 </form>	
